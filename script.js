@@ -26,11 +26,11 @@ var quizOver = false;
 
 $(document).ready(function () {
 
-    // Display the first question
+   
     displayCurrentQuestion();
     $(this).find(".quizMessage").hide();
 
-    // On clicking next, display the next question
+   
     $(this).find(".nextButton").on("click", function () {
         if (!quizOver) {
 
@@ -40,28 +40,27 @@ $(document).ready(function () {
                 $(document).find(".quizMessage").text("Please select an answer");
                 $(document).find(".quizMessage").show();
             } else {
-                // TODO: Remove any message -> not sure if this is efficient to call this each time....
+                
                 $(document).find(".quizMessage").hide();
 
                 if (value == questions[currentQuestion].correctAnswer) {
                     correctAnswers++;
                 }
 
-                currentQuestion++; // Since we have already displayed the first question on DOM ready
+                currentQuestion++;
                 if (currentQuestion < questions.length) {
                     displayCurrentQuestion();
                 } else {
                     displayScore();
-                    //                    $(document).find(".nextButton").toggle();
-                    //                    $(document).find(".playAgainButton").toggle();
-                    // Change the text in the next button to ask if user wants to play again
+                    $(document).find(".nextButton").toggle();
+                    $(document).find(".playAgainButton").toggle();
                     $(document).find(".nextButton").text("Play Again?");
                     quizOver = true;
                 }
             }
         } else { // quiz is over and clicked the next button (which now displays 'Play Again?'
             quizOver = false;
-            $(document).find(".nextButton").text("Next Question");
+            $(document).find(".nextButton").text("Gameover");
             resetQuiz();
             displayCurrentQuestion();
             hideScore();
@@ -108,8 +107,8 @@ function displayScore() {
 function hideScore() {
     $(document).find(".result").hide();
 }
-const startingMinutes = 1;
-let time = startingSeconds * 60;
+/*const minutes = Math.floor(minutes/ 60);
+let time = time % 60;
 
 const countdownEl = document.getElementById("countdown");
 
