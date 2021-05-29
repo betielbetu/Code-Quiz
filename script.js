@@ -193,7 +193,6 @@ function allDone() {
             // Travels to final page
             window.location.replace("./HighScores.html");
         }
-    });
 
 }
 
