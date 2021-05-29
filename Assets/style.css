@@ -77,4 +77,11 @@ p {
     text-align: center;
     font-family:'Rokkitt', serif;
 }
+.countdown{
+    width: 30%;
+    background-color:beige;
+    margin: auto;
+    text-align: center;
+    
+}
 /* End of Quiz Classes */
