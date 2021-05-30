@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Code quiz</title>
-    <link rel="stylesheet" href="Assets/style.css" />
-    
-  </head>
-  <body onclick="myfunction()">
-    <div class="countdown" >
-      Start Quiz <span id="countdown">0:30</span> minutes!
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="scores.html">View Highscores</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">Time: <span id="seconds-remaining">0</span></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="offset-lg-3"></div>
+      <div class="card">
+      <div class="col-10 main-content">
       
-  </div>
-    <div class="quizContainer">
-         <h1>Hello! Welcome to the JS Quiz!</h1>
-
-        <div class="question"></div>
-        <ul class="choiceList"></ul>
-        <div class="quizMessage"></div>
-        <div class="result"></div>
-        <div class="nextButton"><button>Next Question</button></div>
-        <div class="Game over"></div>
-        
-        
+        <div class="quiz-intro">
+          
+          <h1>Custom Quiz</h1>
+          <h4>Hello...Welcome to Code Quiz!!</h2>
+          <div class="button-container">
+            <button id="start-quiz">Start Quiz</button>
+          </div>
+        </div>
+      </div>
+      <div class="offset-lg-3"></div>
     </div>
+    </div>
+  </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+  
+  <script src="score.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
-
