@@ -56,7 +56,7 @@ THEN I can save my initials and score
 ### Technology Used
 
 
-HTML, CSS and Javascript
+HTML, CSS, Javascript
 
 ### Deployment
 
