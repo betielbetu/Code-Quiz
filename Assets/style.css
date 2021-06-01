@@ -1,7 +1,7 @@
 
 
 body {
-    background-image: url('./back1.jpg');
+    background-image: url('/Assets/back1.jpg');
     background-repeat: no-repeat;
     background-size: cover;  
 }  
