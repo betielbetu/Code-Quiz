@@ -61,4 +61,4 @@ HTML, CSS, Javascript
 ### Deployment
 
 GitHub: https://github.com/betielbetu/Code-Quiz <br />
-Live Url: 
+Live Url: https://betielbetu.github.io/Code-Quiz/ <br />
