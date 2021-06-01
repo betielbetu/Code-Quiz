@@ -8,25 +8,25 @@ var quizDone;
 
 var questions = [
     {
-        question: "Which African country was formerly known as Abyssinia?",
-        choices: ["Kenya", "Ethiopia", "South Africa", "Nigeria"],
-        correct: '1'
-    }, {
-        question: "In which European city would you find Orly airport?",
-        choices: ["Rome", "Berlin", "Paris", "Milan"],
+        question: "Who invented JavaScript?",
+        choices: ["Douglas Crockford", "Sheryl Sandberg", "Brendan Eich", "Tim Berners-Lee"],
         correct: '2'
     }, {
-        question: "Which country consumes the most chocolate per capita?",
-        choices: ["Italy", "Japan", "U.S.A", "Switzerland"],
+        question: "Which one of these is a JavaScript package manager?",
+        choices: ["Node.jse", "TypeScript", "npm", "Java"],
+        correct: '2'
+    }, {
+        question: "Which tool can you use to ensure code quality?",
+        choices: ["Angular", "Query", "RequireJS", "ESLint"],
         correct: '3'
     }, {
-        question: "Which of Shakespeare’s plays is the longest?",
-        choices: ["Romeo and Juliet", "Hamlet", "Othello", "King Lear"],
-        correct: '1'
+        question: "Who developed and designed TypeScript?",
+        choices: ["Microsoft", "Amazon", "Oracle", "TypeScript"],
+        correct: '0'
     }, {
-        question: "How many ribs are in a human body?",
-        choices: ["Ten", "Twenty", "Twenty-four", "Eighteen"],
-        correct: '2'
+        question: "Which of the following is the typing principle of typescript?",
+        choices: ["Gradual", "Dynamic", "Duck", "All of the above"],
+        correct: '3'
     }
 ];
 
